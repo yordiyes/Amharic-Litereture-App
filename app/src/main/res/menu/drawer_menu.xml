@@ -1,0 +1,11 @@
+<!-- drawer_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_fiction"
+
+        android:title="Fiction" />
+    <item
+        android:id="@+id/nav_nonfiction"
+        android:title="Non-Fiction" />
+    <!-- Add more categories as needed -->
+</menu>
