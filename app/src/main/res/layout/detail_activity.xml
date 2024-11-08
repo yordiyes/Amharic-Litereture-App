@@ -1,5 +1,6 @@
 <!-- res/layout/detail_activity.xml -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -42,7 +43,7 @@
             />
 
         <TextView
-            android:id="@+id/bookAuthorDetailTextView2"
+            android:id="@+id/genere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -60,7 +61,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/bookDescriptionDetailTextView2"
+            android:id="@+id/pages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

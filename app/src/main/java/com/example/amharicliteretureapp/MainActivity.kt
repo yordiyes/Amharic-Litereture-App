@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+
 import androidx.core.view.GravityCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -61,17 +62,20 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
 
-        // Sample data
-//        val books = listOf(
-//            Book("Book Title 1", "Author 1", R.drawable.cover1),
-//            Book("Book Title 2", "Author 2", R.drawable.cover2),
-//            Book("Book Title 3", "Author 3", R.drawable.cover3)
-//        )
+
+
+
+//         Sample data
+        val books = listOf(
+            Book("Book Title 1", "Author 1", R.mipmap.ic_launcher),
+            Book("Book Title 2", "Author 2",R.mipmap.ic_launcher),
+            Book("Book Title 3", "Author 3", R.mipmap.ic_launcher)
+        )
 
         // Set up RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
-//        recyclerView.adapter = BookAdapter(books)
+        recyclerView.adapter = BookAdapter(books)
 
     }
 

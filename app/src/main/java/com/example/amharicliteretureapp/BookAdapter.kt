@@ -1,3 +1,4 @@
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -5,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.amharicliteretureapp.Book
+import com.example.amharicliteretureapp.BooksDetailActivity
 import com.example.amharicliteretureapp.R
 
 class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
@@ -26,6 +28,17 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         holder.titleTextView.text = book.title
         holder.authorTextView.text = book.author
         holder.coverImageView.setImageResource(book.coverImage)
+
+        // Set up click listener to navigate to BookDetailActivity
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, BooksDetailActivity::class.java).apply {
+                putExtra("book_title", book.title)
+                putExtra("book_author", book.author)
+                putExtra("book_cover", book.coverImage)
+            }
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount() = books.size

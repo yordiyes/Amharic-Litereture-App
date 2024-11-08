@@ -22,7 +22,7 @@
             android:layout_height="150dp"
             android:scaleType="centerCrop"
             android:contentDescription="Description about the book."
-            android:src="" />
+            android:src="@mipmap/ic_launcher" />
 
         <!-- Description Section -->
         <LinearLayout
