@@ -1,0 +1,72 @@
+<!-- res/layout/detail_activity.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Thumbnail Image -->
+        <ImageView
+            android:id="@+id/bookThumbnailDetailImageView"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:contentDescription="book_thumbnail" />
+
+        <!-- Book Title -->
+        <TextView
+            android:id="@+id/bookTitleDetailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Book Title"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Book Author -->
+        <TextView
+            android:id="@+id/bookAuthorDetailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="by Author Name"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            />
+
+        <TextView
+            android:id="@+id/bookAuthorDetailTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Genere: "
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            />
+        <!-- Book Description -->
+        <TextView
+            android:id="@+id/bookDescriptionDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="This is the detailed description of the book, providing an in-depth overview and any additional information about the content, themes, and context."
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/bookDescriptionDetailTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Page: 123"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>
