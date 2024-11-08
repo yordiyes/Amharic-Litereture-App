@@ -17,7 +17,7 @@
 
         <!-- Thumbnail Image -->
         <ImageView
-            android:id="@+id/bookThumbnailImageView"
+            android:id="@+id/bookThumbnail"
             android:layout_width="100dp"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
@@ -34,7 +34,7 @@
             android:paddingEnd="8dp">
 
             <TextView
-                android:id="@+id/bookTitleTextView"
+                android:id="@+id/booktitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Book Title"
@@ -45,7 +45,7 @@
                 android:ellipsize="end" />
 
             <TextView
-                android:id="@+id/bookAuthorTextView"
+                android:id="@+id/bookAuthor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="by Author Name"
@@ -55,7 +55,7 @@
                 android:maxLines="1" />
 
             <TextView
-                android:id="@+id/bookDescriptionTextView"
+                android:id="@+id/bookDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This is a brief description of the book content, providing a short overview for the reader."

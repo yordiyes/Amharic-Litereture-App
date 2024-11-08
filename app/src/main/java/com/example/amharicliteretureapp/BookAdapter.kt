@@ -11,13 +11,13 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
 
     // ViewHolder class to hold reference to each item’s views
     class BookViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val titleTextView: TextView = itemView.findViewById(R.id.book_title)
-        val authorTextView: TextView = itemView.findViewById(R.id.book_author)
-        val coverImageView: ImageView = itemView.findViewById(R.id.book_cover)
+        val titleTextView: TextView = itemView.findViewById(R.id.booktitle)
+        val authorTextView: TextView = itemView.findViewById(R.id.bookAuthor)
+        val coverImageView: ImageView = itemView.findViewById(R.id.bookThumbnail)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_book, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_book_card, parent, false)
         return BookViewHolder(view)
     }
 
