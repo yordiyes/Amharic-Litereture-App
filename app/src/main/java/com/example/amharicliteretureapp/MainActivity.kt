@@ -1,6 +1,7 @@
 package com.example.amharicliteretureapp
 
 import BookAdapter
+import android.content.Intent
 import android.os.Bundle
 
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.drawer_layout)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -35,11 +38,15 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_fiction -> {
-//                    startActivity(Intent(this, FictionActivity::class.java))
+                    startActivity(Intent(this, FictionActivity::class.java))
                     true
                 }
                 R.id.nav_nonfiction -> {
-//                    startActivity(Intent(this, NonFictionActivity::class.java))
+                    startActivity(Intent(this, NonFictionActivity::class.java))
+                    true
+                }
+                R.id.nav_poems -> {
+                    startActivity(Intent(this, PoemsActivity::class.java))
                     true
                 }
                 // Handle additional categories here
@@ -53,6 +60,8 @@ class MainActivity : AppCompatActivity() {
         // Enable opening the drawer with the toolbar icon
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+        supportActionBar?.title = "My Books App"
+
         val toggle = ActionBarDrawerToggle(
             this, drawerLayout, toolbar,
             R.string.navigation_drawer_open,
