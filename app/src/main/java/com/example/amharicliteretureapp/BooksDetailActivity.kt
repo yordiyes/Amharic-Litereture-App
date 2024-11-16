@@ -17,6 +17,12 @@ import androidx.core.view.WindowInsetsCompat
 class BooksDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.detail_activity)
+
+        val bookTitle = intent.getStringExtra("book_title")
+        val bookAuthor = intent.getStringExtra("book_author")
+        val bookCover = intent.getIntExtra("book_cover", R.mipmap.ic_launcher)
+
 
         val scrollView=findViewById<ScrollView>(R.id.scrollview)
         val imageCover=findViewById<ImageView>(R.id.bookThumbnailDetailImageView)
