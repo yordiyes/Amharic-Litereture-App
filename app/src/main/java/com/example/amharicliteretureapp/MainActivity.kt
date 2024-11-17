@@ -76,6 +76,8 @@ class MainActivity : AppCompatActivity() {
 
 //         Sample data
         val books = listOf(
+            Book(" ኦሮማይ", "በዓሉ ግርማ", R.drawable.oromay),
+            Book("የቀይ ኮከብ ጥሪ", "በዓሉ ግርማ",R.drawable.keykokeb),
             Book("Book Title 1", "Author 1", R.mipmap.ic_launcher),
             Book("Book Title 2", "Author 2",R.mipmap.ic_launcher),
             Book("Book Title 3", "Author 3", R.mipmap.ic_launcher)
