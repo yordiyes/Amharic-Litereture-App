@@ -19,12 +19,12 @@ class NonFictionActivity : AppCompatActivity() {
 
         //         Sample data
         val books = listOf(
-            Book("ዳግማዊ አጤሚኒልክ", "አፈወረቅ ገብረእየሱስ", R.drawable.menelik,115),
-            Book("ኦሪጅን", "ሃኒም ኤልያስ",R.drawable.origin,468),
-            Book("የዓድዋ ዘመቻና የአፄ ምኒሊክ አነሳስ", "ዳኘው ወልደስላሴ", R.drawable.atse,121),
-            Book("ፕሌቶ የሶቅራጠስ የሕይወት መጨረሻ ቀናትና ፍልስፍና ", "ስንታየሁ ዘርአብሩክ", R.drawable.plato,170),
-            Book("ባይብል ኮድ(BIBLE CODE)", "ሃሊም ኤልያስ", R.drawable.biblecode,296),
-            Book("7 ቁጥር ", "መስፍን ሰለሞን ሙሀባ", R.drawable.sebat,162),
+            Book("ዳግማዊ አጤሚኒልክ", "አፈወረቅ ገብረእየሱስ", R.drawable.menelik,115, "", 200, "ታሪክ"),
+            Book("ኦሪጅን", "ሃኒም ኤልያስ",R.drawable.origin,468, "", 200, "ታሪክ"),
+            Book("የዓድዋ ዘመቻና የአፄ ምኒሊክ አነሳስ", "ዳኘው ወልደስላሴ", R.drawable.atse,121, "", 200, "ታሪክ"),
+            Book("ፕሌቶ የሶቅራጠስ የሕይወት መጨረሻ ቀናትና ፍልስፍና ", "ስንታየሁ ዘርአብሩክ", R.drawable.plato,170, "", 200, "ታሪክ"),
+            Book("ባይብል ኮድ(BIBLE CODE)", "ሃሊም ኤልያስ", R.drawable.biblecode,296, "", 200, "ታሪክ"),
+            Book("7 ቁጥር ", "መስፍን ሰለሞን ሙሀባ", R.drawable.sebat,162, "", 200, "ታሪክ"),
         )
 
         // Set up RecyclerView
