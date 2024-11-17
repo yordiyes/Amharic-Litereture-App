@@ -15,9 +15,9 @@ class FictionActivity : AppCompatActivity() {
 
 //         Sample data
         val books = listOf(
-            Book(" ኦሮማይ", "በዓሉ ግርማ", R.drawable.oromay),
-            Book("የቀይ ኮከብ ጥሪ", "በዓሉ ግርማ",R.drawable.keykokeb),
-            Book("ከአድማስ ባሻገር", "በዓሉ ግርማ", R.drawable.admas)
+            Book(" ኦሮማይ", "በዓሉ ግርማ", R.drawable.oromay,372),
+            Book("የቀይ ኮከብ ጥሪ", "በዓሉ ግርማ",R.drawable.keykokeb,372),
+            Book("ከአድማስ ባሻገር", "በዓሉ ግርማ", R.drawable.admas,372)
         )
 
         // Set up RecyclerView

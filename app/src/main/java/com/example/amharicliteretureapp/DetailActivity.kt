@@ -18,7 +18,7 @@ class DetailActivity : AppCompatActivity() {
         val bookDescription = intent.getStringExtra(EXTRA_DESCRIPTION)
         val bookThumbnailResId = intent.getIntExtra(EXTRA_THUMBNAIL, 0)
 
-        findViewById<TextView>(R.id.bookTitleDetailTextView).text = bookTitle
+        findViewById<TextView>(R.id.bookTitle2).text = bookTitle
         findViewById<TextView>(R.id.bookAuthorDetailTextView).text = "by $bookAuthor"
         findViewById<TextView>(R.id.bookDescriptionDetailTextView).text = bookDescription
         findViewById<ImageView>(R.id.bookThumbnailDetailImageView).setImageResource(bookThumbnailResId)

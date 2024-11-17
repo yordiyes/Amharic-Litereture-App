@@ -36,6 +36,7 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
                 putExtra("book_title", book.title)
                 putExtra("book_author", book.author)
                 putExtra("book_cover", book.coverImage)
+                putExtra("pages",book.pages)
             }
             context.startActivity(intent)
         }

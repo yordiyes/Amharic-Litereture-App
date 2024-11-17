@@ -13,9 +13,9 @@ class PoemsActivity : AppCompatActivity() {
 
         //         Sample data
         val books = listOf(
-            Book("Book Title 1", "Author 1", R.mipmap.ic_launcher),
-            Book("Book Title 2", "Author 2",R.mipmap.ic_launcher),
-            Book("Book Title 3", "Author 3", R.mipmap.ic_launcher)
+            Book("Book Title 1", "Author 1", R.mipmap.ic_launcher,372),
+            Book("Book Title 2", "Author 2",R.mipmap.ic_launcher,372),
+            Book("Book Title 3", "Author 3", R.mipmap.ic_launcher,372)
         )
 
         // Set up RecyclerView
