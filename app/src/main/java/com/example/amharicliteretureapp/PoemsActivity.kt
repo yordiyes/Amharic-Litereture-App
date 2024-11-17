@@ -3,6 +3,7 @@ package com.example.amharicliteretureapp
 import BookAdapter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -10,6 +11,11 @@ class PoemsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_poems)
+
+        // Enable opening the drawer with the toolbar icon
+        val toolbar = findViewById<Toolbar>(R.id.toolbar3)
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Poem books"
 
         //         Sample data
         val books = listOf(
