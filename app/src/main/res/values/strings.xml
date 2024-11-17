@@ -3,5 +3,14 @@
     <!-- strings.xml -->
     <string name="navigation_drawer_open">Open drawer</string>
     <string name="navigation_drawer_close">Close drawer</string>
+    <string name="about_us">
+        This app is developed by:
+            Yordanos Yeshitla
+            Tesfatsion Gudeta
+            Samuel Negasa
+            Michael Birhanu
+            Nathenael Teketel
+            Fuad Abdulahmid
+    </string>
 
 </resources>
