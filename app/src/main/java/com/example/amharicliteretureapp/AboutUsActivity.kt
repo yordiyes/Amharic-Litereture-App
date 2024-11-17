@@ -24,7 +24,7 @@ class AboutUsActivity : AppCompatActivity() {
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar5)
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "Fiction Books"
+        supportActionBar?.title = "About Us"
         // Enable the back button
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
