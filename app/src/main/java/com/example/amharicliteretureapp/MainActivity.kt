@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         // Enable opening the drawer with the toolbar icon
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-        supportActionBar?.title = "My Books App"
+        supportActionBar?.title = "All Books"
 
         val toggle = ActionBarDrawerToggle(
             this, drawerLayout, toolbar,
