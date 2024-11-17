@@ -19,9 +19,13 @@ class PoemsActivity : AppCompatActivity() {
 
         //         Sample data
         val books = listOf(
-            Book("Book Title 1", "Author 1", R.mipmap.ic_launcher,372),
-            Book("Book Title 2", "Author 2",R.mipmap.ic_launcher,372),
-            Book("Book Title 3", "Author 3", R.mipmap.ic_launcher,372)
+            Book("አንድ ቀን", "ኪሩበል ግርማ", R.drawable.and_ken,52, "",2000, "ግጥም"),
+            Book("ንዝረት", "ዘሪሁን ገመ",R.drawable.nzret,106, "",2000, "ግጥም"),
+            Book("ጣኦስ", "ዙፋን ክፍሌ", R.drawable.taos,78,"",2000, "ግጥም"),
+            Book("አልሞትኩም", "ኪሩበል ኩማ",R.drawable.almotkum,61, "",2000, "ግጥም"),
+            Book("አፍላ ገጾች", "ዮናስ መስፍን",R.drawable.aflagetsoch,90, "",2000, "ግጥም"),
+            Book("የመጨረሻዋ እለት", "አብረሃም በእውቀት", R.drawable.yemechereshawaelet,78, "",2000, "ግጥም"),
+            Book("ጨው በረንዳ", "ምስራቅ ተረፈ",R.drawable.chewberenda,71, "",2000, "ግጥም")
         )
 
         // Set up RecyclerView

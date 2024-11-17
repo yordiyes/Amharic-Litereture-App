@@ -21,12 +21,14 @@ class FictionActivity : AppCompatActivity() {
 
 //         Sample data
         val books = listOf(
-            Book(" ኦሮማይ", "በዓሉ ግርማ", R.drawable.oromay,372),
-            Book("የቀይ ኮከብ ጥሪ", "በዓሉ ግርማ",R.drawable.keykokeb,372),
-            Book("ከአድማስ ባሻገር", "በዓሉ ግርማ", R.drawable.admas,372),
-            Book("እመጓ", "ዓለማየሁ ዋሴ",R.drawable.emegua,270),
-            Book("ሌላሠው", "ምህረት ደበበ", R.drawable.lelasew,451),
-            Book("ዙቤይዳ", "አሌክስ አብርሃም", R.drawable.zubeyda, 251)
+            Book(" ኦሮማይ", "በዓሉ ግርማ", R.drawable.oromay,372,"",2000, "ልብ ወለድ "),
+            Book("የቀይ ኮከብ ጥሪ", "በዓሉ ግርማ",R.drawable.keykokeb,372,"",2000, "ልብ ወለድ "),
+            Book("ከአድማስ ባሻገር", "በዓሉ ግርማ", R.drawable.admas,372, "",2000, "ልብ ወለድ "),
+            Book("እመጓ", "ዓለማየሁ ዋሴ",R.drawable.emegua,270, "",2000, "ልብ ወለድ "),
+            Book("ሌላሠው", "ምህረት ደበበ", R.drawable.lelasew,451, "",2000, "ልብ ወለድ "),
+            Book("ዙቤይዳ", "አሌክስ አብርሃም", R.drawable.zubeyda, 251, "",2000, "ልብ ወለድ "),
+            Book("ሰመመን","ሲሳይ ንጉሱ", R.drawable.sememen, 378, "",2000, "ልብ ወለድ "),
+            Book("ችቦ", "አለማየሁ ዋሴ እሸቴ", R.drawable.chbo,200, "",2000, "ልብ ወለድ ")
         )
 
         // Set up RecyclerView

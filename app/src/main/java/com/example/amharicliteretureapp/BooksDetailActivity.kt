@@ -21,6 +21,10 @@ class BooksDetailActivity : AppCompatActivity() {
         val bookAuthor = intent.getStringExtra("book_author")
         val bookCover = intent.getIntExtra("book_cover", R.mipmap.ic_launcher)
         val page_number = intent.getIntExtra("pages", R.mipmap.ic_launcher)
+        val description = intent.getStringExtra("description")
+        val year = intent.getIntExtra("year", R.mipmap.ic_launcher)
+        val genera = intent.getStringExtra("genera")
+
 
         val scrollView=findViewById<ScrollView>(R.id.scrollview)
         val imageCover=findViewById<ImageView>(R.id.bookThumbnailDetailImageView)
@@ -29,14 +33,14 @@ class BooksDetailActivity : AppCompatActivity() {
         val genre=findViewById<TextView>(R.id.genere)
         val bookDescription=findViewById<TextView>(R.id.bookDescriptionDetailTextView)
         val pages=findViewById<TextView>(R.id.pages)
+        val date=findViewById<TextView>(R.id.date)
 
         imageCover.setImageResource(bookCover)
         bookName.setText(bookTitle.toString())
         author.setText(bookAuthor.toString())
         pages.setText(page_number.toString())
-
-
-
-
+        bookDescription.setText(description.toString())
+        genre.setText(genera.toString())
+        date.setText(year.toString())
     }
 }

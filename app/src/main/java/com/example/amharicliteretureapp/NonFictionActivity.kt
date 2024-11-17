@@ -19,9 +19,12 @@ class NonFictionActivity : AppCompatActivity() {
 
         //         Sample data
         val books = listOf(
-            Book("Book Title 1", "Author 1", R.mipmap.ic_launcher,372),
-            Book("Book Title 2", "Author 2",R.mipmap.ic_launcher,372),
-            Book("Book Title 3", "Author 3", R.mipmap.ic_launcher,372)
+            Book("ዳግማዊ አጤሚኒልክ", "አፈወረቅ ገብረእየሱስ", R.drawable.menelik,115),
+            Book("ኦሪጅን", "ሃኒም ኤልያስ",R.drawable.origin,468),
+            Book("የዓድዋ ዘመቻና የአፄ ምኒሊክ አነሳስ", "ዳኘው ወልደስላሴ", R.drawable.atse,121),
+            Book("ፕሌቶ የሶቅራጠስ የሕይወት መጨረሻ ቀናትና ፍልስፍና ", "ስንታየሁ ዘርአብሩክ", R.drawable.plato,170),
+            Book("ባይብል ኮድ(BIBLE CODE)", "ሃሊም ኤልያስ", R.drawable.biblecode,296),
+            Book("7 ቁጥር ", "መስፍን ሰለሞን ሙሀባ", R.drawable.sebat,162),
         )
 
         // Set up RecyclerView

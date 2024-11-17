@@ -72,6 +72,15 @@
             android:text="Page: 123"
             android:textAppearance="?attr/textAppearanceBody1"
             android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Year"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            />
+
 
     </LinearLayout>
 </ScrollView>

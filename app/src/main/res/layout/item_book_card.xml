@@ -32,38 +32,31 @@
             android:paddingStart="8dp"
             android:paddingEnd="8dp">
 
+            <!-- Book Title -->
             <TextView
                 android:id="@+id/booktitle"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Book Title"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:maxLines="2"
-                android:ellipsize="end" />
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:maxLines="3" />
 
+            <!-- Book Author -->
             <TextView
                 android:id="@+id/bookAuthor"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="by Author Name"
                 android:textAppearance="?attr/textAppearanceSubtitle2"
-                android:paddingTop="4dp"
-                android:ellipsize="end"
-                android:maxLines="1" />
-
-            <TextView
-                android:id="@+id/bookDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="This is a brief description of the book content, providing a short overview for the reader."
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/black"
                 android:paddingTop="8dp"
-                android:maxLines="4"
-                android:ellipsize="end" />
-
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:ellipsize="end"
+                android:maxLines="2" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
