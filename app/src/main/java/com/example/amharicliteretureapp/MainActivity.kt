@@ -282,15 +282,6 @@ class MainActivity : AppCompatActivity() {
                 "ምስራቅ ተረፈ",
                 R.drawable.chewberenda,
                 71,
-                "ይህ የ ግጥም መድብል በ ውስጡ በርካታ በ ተለያየ ዘውግ ላይ የሚያጠነጥኑ ርዕሶች ላይ ያተኮሩ ግጥሞችን የያዘ ነው::",
-                2000,
-                "ግጥም"
-            ),
-            Book(
-                "ጨው በረንዳ",
-                "ምስራቅ ተረፈ",
-                R.drawable.chewberenda,
-                71,
                 "ይህ የ ልብወለድ መፅሐፍ ነው።",
                 2001,
                 "ልብ ወለድ"
